@@ -1,0 +1,73 @@
+.container-template-mesclagem{
+    display: grid;
+    width: 70vw;
+    grid-template-columns: repeat(4,1fr) ;
+    /* grid-template-columns: repeat(6, 100px); */
+    grid-auto-rows: 100px;
+    /* grid-column-gap: 10px;
+    grid-row-gap: 30px; */
+    border:3px solid rgb(243, 7, 164) ;
+    margin: auto;
+    color: aliceblue;
+    gap: 30px 10px;
+    /* gap: linha coluna; */
+}
+
+
+.item{
+    background-color: rgb(62, 62, 63);
+    border: 2px solid black;
+}
+
+.container-template-mesclagem .item6{
+     height: 100px; 
+}
+
+.container-template-mesclagem .item2{
+    grid-column-start:2 ;
+    grid-column-end: 4; 
+}
+
+.container-template-mesclagem .item4{
+    grid-column: 4/5;
+
+    grid-row: 5/8;
+    /* grid-row-start:5 ;
+    grid-row-end:8 ;
+
+    grid-column-start:4 ;
+    grid-column-end: 5; 
+     */
+}
+
+.container-template-area{
+    display: grid;
+    width: 70vw;
+    margin: auto;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-areas: 
+    "it1 it1 it1"
+    "it2 it3 it3"
+    "it2 it4 it4"
+    "it5 it5 it5";
+}
+
+.container-template-area .item1{
+    grid-area: it1;
+}
+
+.container-template-area .item2{
+    grid-area: it2;
+}
+
+.container-template-area .item3{
+    grid-area: it3;
+}
+
+.container-template-area .item4{
+    grid-area: it4;
+}
+
+.container-template-area .item5{
+    grid-area: it5;
+}
